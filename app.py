@@ -79,7 +79,7 @@ def upload_file():
                 return redirect(url_for('download_file', filename=executable_name))
             except subprocess.CalledProcessError as e:
                 return f"Error creating executable: {str(e)}"
-    return render_template('upload.html')
+    return render_template('installer.html')
 
 @app.route('/download/<filename>')
 def download_file(filename):
@@ -92,7 +92,7 @@ def send_message():
         body = request.form['body']
         result = send_email(SENDER_EMAIL, PASSWORD, receiver_email, SUBJECT, body)
         return render_template('email.html', message=result)
-    return render_template('email.html')
+    return render_template('mail.html')
 
 # Main
 if __name__ == '__main__':
