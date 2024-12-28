@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+   <title>ARCHMAN TOOLS</title>
+  <style>
+  body{
+    background-color:#000000;
+    color:#fff;
+    font-family:Arial,sans-serif;
+    text-align:center;
+    justify-content:center;
+  
+  }
+  
+  header{
+    display:flex;
+    background-color:#78C4F9;
+    color:#fff;
+    align-items:center;
+    height:90px;
+   }
+  header img{
+    width:90px;
+    height:auto;
+  }
+  header h1{
+    font-size:3em;
+    letter-spacing:8px;
+  }
+  .intro{
+    justify-content:center;
+  }
+  .intro img{
+animation:rotation 10s linear infinite;
+    box-shadow:
+    0 0 20px orange,
+    0 0 20px yellow,
+    0 0 50px blue,
+    0 0 50px green;
+    border-radius:50%;
+    border:dashed 10px #fff;
+    margin-top:15px;
+    width:100px;
+    height:100px;
+    
+  }
+  @keyframes rotation {
+    from {
+      transform:rotate(0deg);
+    }
+    to {
+      transform:rotate(360deg);
+    }
+  }
+
+   .body .pic{
+     margin-left:35px;
+   }
+  .body .pic{
+    border:solid 5px #78C4F9;
+    border-radius:10px;
+    width:80%;
+    height:auto;
+    margin-bottom:10px;
+  }
+  .body .pic img{
+    height:auto;
+    width:150px;
+    animation:bounce 2s infinite;
+    margin:10px;
+    border-bottom-style:dashed;
+  }
+   @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-20px);
+      }
+      60% {
+        transform: translateY(-10px);
+      }
+    }
+  .body a{
+    display: inline-block;
+      margin:5px;
+      padding: 10px 20px;
+      background-color: orange;
+      color: #000000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+  }
+  .body a:hover{
+    color:#fff;
+  }
+  
+  </style>
+</head>
+<body>
+  <header>
+    <img src="/storage/emulated/0/Pictures/Logo Maker-TTT TEAM/SGN_12_26_2024_1735221598561.png">
+    <h1>Archman</h1>
+  </header>
+  <section class="intro">
+      <div class="image">
+    <img src=" /storage/emulated/0/Pictures/facebook/FB_IMG_17258195160839235.jpg">
+      </div>
+  </section>
+  <section class="body">
+    <strong><p>WELCOME TO ARCHMAN TEAM PROJECT<br>EXPLORING POSSIBILITIES OF AI AND POWER OF CODING SKILL</p></strong>
+    <div class="pic">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/New_Logo_Gmail.svg" alt="mailbox">
+      <h2>MAIL SENDER</h2>
+      <p>Send Anonymous Quick Mail</p>
+      <a href="mail.html">TRY NOW</a>
+    </div>
+        <div class="pic">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo">
+      <h2>PYTHON CODE EXECUTOR</h2>
+      <p>Package Your Python File To Be Executable (.exe)</p>
+      <a href="installer.html">TRY NOW</a>
+    </div>
+       
+    
+  </section>
+</body>
+</html>
