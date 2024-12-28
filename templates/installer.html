@@ -1,0 +1,31 @@
+            opacity: 0.8;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    .back-link{
+        font-size:1rem;
+        margin-bottom:5px;
+    }
+            
+    </style>
+</head>
+<body>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" class="py">
+    <h1>Upload Your Python Script</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".py" required>
+        <button type="submit">Upload and Convert</button>
+    </form>
+    <footer>
+        Powered by <a href="https://yourwebsite.com" target="_blank">ARCHMAN</a><br>
+        <a href="web.html" class="back-link"> «« Back to Home</a>
+    </footer>
+</body>
+</html>
