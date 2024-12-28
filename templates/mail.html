@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Email</title>
+    <style>
+        /* General Styling */
+        body {
+            background-color: #1d1f21;
+            color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #78C4F9;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .form-container {
+            background-color: #292c2f;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        label {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input, textarea, button {
+            width: 100%;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        input, textarea {
+            background-color: #1d1f21;
+            color: #f5f5f5;
+            border: 1px solid #78C4F9;
+        }
+
+        textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        button {
+            background-color: #78C4F9;
+            color: #1d1f21;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #5aaee7;
+        }
+
+        .message {
+            margin-top: 15px;
+            font-size: 1rem;
+            text-align: center;
+            color: #78C4F9;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: #78C4F9;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #5aaee7;
+        }
+    </style>
+</head>
+<body>
+    <h1>Send Email</h1>
+    <div class="form-container">
+        <form action="/send-email" method="post">
+            <label for="receiver_email">Recipient Email:</label>
+            <input type="email" id="receiver_email" name="receiver_email" placeholder="Enter recipient's email" required>
+
+            <label for="body">Message:</label>
+            <textarea id="body" name="body" placeholder="Write your message here" required></textarea>
+
+            <button type="submit">Send Email</button>
+        </form>
+    </div>
+    <a class="back-link" href="/">Back to Home</a>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Python Script</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #78C4F9, #00416A);
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            width: 90%;
+            max-width: 400px;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin: 15px auto;
+            padding: 10px;
+            background: #fff;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        input[type="file"]::-webkit-file-upload-button {
+            background: #00416A;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button {
+            display: inline-block;
+            background: #00416A;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background: #78C4F9;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.8rem;
