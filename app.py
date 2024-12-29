@@ -55,6 +55,14 @@ def send_email(sender_email, password, receiver_email, subject, body):
 def home():
     return render_template('index.html')
 
+@app.route('/installer', methods=['GET'])
+def installer():
+    return render_template('installer.html')
+
+@app.route('/mail', methods=['GET'])
+def mail():
+    return render_template('mail.html')
+
 @app.route('/upload', methods=['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
@@ -91,9 +99,9 @@ def send_message():
         receiver_email = request.form['receiver_email']
         body = request.form['body']
         result = send_email(SENDER_EMAIL, PASSWORD, receiver_email, SUBJECT, body)
-        return render_template('email.html', message=result)
+        return render_template('mail.html', message=result)
     return render_template('mail.html')
 
 # Main
 if __name__ == '__main__':
-    app.run(debug=True,host='0.0.0.0',port=3000)
+    app.run(debug=True, host='0.0.0.0', port=3000)
